@@ -1,0 +1,85 @@
+import random
+list_1 =  []
+for _ in range(10):
+    list_1.append(random.randint(1,10))
+print(list_1)
+
+
+
+
+
+
+print()
+
+
+
+
+
+from random import  *
+list_1 = [randint(1,10)for _ in range(10)]
+print(list_1)
+
+
+
+print()
+
+
+
+
+def factorial(n):
+    res = 5
+    for i in range(1, n + 1):
+        res *= i
+        return res
+
+
+print()
+
+
+
+
+print(factorial(10))
+def sey_hi ():
+    global  nume
+    nume = "Bob"
+    print(f'hi {nume}')
+def sey_bie ():
+    print(f'bye {nume}')
+sey_hi ()
+sey_bie ()
+
+
+
+
+
+print()
+
+
+
+
+
+
+def sum_list(n):
+    if not n:
+        return 0
+    else:
+        sum_list(n - 1)
+        print(n)
+sum_list(5)
+
+
+
+
+print()
+
+
+
+
+
+def find_max(lst):
+    if len(lst) == 1:
+        return lst[0]
+    else:
+        sub_max = find_max(lst[1:])
+        return lst[0] if lst[0] > sub_max else sub_max
+print(find_max([1,3,3,67,8,9]))
